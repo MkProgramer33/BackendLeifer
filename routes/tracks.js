@@ -1,15 +1,10 @@
 const express = require("express")
 const router = express.Router()
-
+const {getItems} = require ("../controllers/tracks")
 
 //TODO el http://localhost/tracks GET, POST, DELETE, PUT (CRUD)
 
-router.get("/", (req,res) => {
-    
-   const data = ["Hola" , "mundo"]
-
-    res.send({data})
-})
+router.get("/", getItems)
 
 
 
