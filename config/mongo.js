@@ -11,7 +11,7 @@ const DataBaseConnect = () => {
         if(!err)
             console.log("****Conexión correcta****")
         else
-            console.log("***Error de conexión***")
+            console.log("****Error de conexión****")
     })
 }
 

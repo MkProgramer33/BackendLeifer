@@ -1,4 +1,4 @@
-const {trackModels} = require('../models')
+const {trackModels, tracksModel} = require("../models")
 
 /**
  * Obtener lista de datos
@@ -6,7 +6,7 @@ const {trackModels} = require('../models')
  * @param {*} res 
  */
 const getItems = async (req, res) => {
-    const data = ["hello", "world"]
+    const data = await tracksModel.find({})
 
     res.send({data})
 }
